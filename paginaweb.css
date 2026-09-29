@@ -1,0 +1,120 @@
+/* --- Fondo Animado Multicolor --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    /* Degradado de 4 colores vibrantes */
+    background: linear-gradient(-45deg, #ff9a9e, #fecfef, #a1c4fd, #c2e9fb, #fbc2eb);
+    background-size: 400% 400%;
+    animation: moverDegradado 15s ease infinite;
+    min-height: 100vh;
+}
+
+/* Animación que hace que el fondo se mueva */
+@keyframes moverDegradado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* --- Efecto de Vidrio Esmerilado (Glassmorphism) --- */
+.tarjeta-vidrio {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+}
+
+/* --- Encabezado --- */
+.encabezado {
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 3rem;
+}
+
+.encabezado h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+    color: #ff4757;
+    text-shadow: 2px 2px 0px white;
+}
+
+.encabezado p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2f3542;
+}
+
+/* --- Secciones Generales --- */
+.seccion {
+    margin-bottom: 4rem;
+}
+
+.titulo-seccion {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+}
+
+/* --- Grid de Contactos --- */
+.grid-contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.boton-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #2f3542;
+    padding: 2rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.boton-contacto .icono {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.boton-contacto:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 107, 129, 0.4);
+}
+
+/* --- Clases guardadas para cuando agregues tus trabajos --- */
+.grid-trabajos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-colorida {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-colorida:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.tarjeta-colorida h3 {
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
